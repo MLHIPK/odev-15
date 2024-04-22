@@ -12,7 +12,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) throws InterruptedException {
-        //1.Örnek
+      
         String url ="https://demoqa.com/elements";
         System.setProperty("webdriver.edge.driver","C:\\EdgeDriver\\msedgedriver.exe");
         WebDriver driver = new EdgeDriver();
@@ -26,7 +26,7 @@ public class Main {
         metin.getText();
         System.out.println(metin.getText());
 
-        //2.Örnek
+ 
         String url2 ="https://demoqa.com/webtables";
         driver.get(url2);
         WebElement add = driver.findElement(By.xpath("//button[@id='addNewRecordButton']"));
@@ -40,7 +40,7 @@ public class Main {
         WebElement age = driver.findElement(By.xpath("//input[@id='age']"));
         age.sendKeys("33");
         WebElement salary = driver.findElement(By.xpath("//input[@id='salary']"));
-        salary.sendKeys("40000");
+        salary.sendKeys("10000");
         WebElement department = driver.findElement(By.xpath("//input[@id='department']"));
         department.sendKeys("Destek Uzmanı");
         WebElement submit = driver.findElement(By.xpath("//button[@id='submit']"));
